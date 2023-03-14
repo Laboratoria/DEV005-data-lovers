@@ -1,0 +1,209 @@
+/*Paleta de colores
+bordes, header, footer = #49a4e1
+card = #2F7BAD
+borde de card= #1F5273
+fondo y barra busqueda = #F7F8F7*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+/*     min-height: 100vh;
+    min-width: 100vw; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    margin: 10px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+header{
+    height: 140px;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    background-color: #49a4e1;
+    width: 100%;
+    height: 100px;
+}
+
+.ghibli1{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.barra{
+    display: flex;
+    margin: 0;
+    background-color: #49a4e1;
+    width: 100%;
+    height: 40px;
+}
+
+.buscar{
+    background-color: #49a4e1;
+    width: 33%;
+}
+
+.buscador {
+    margin-left: 20px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.b-busqueda{
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.filtro{
+    background-color: #49a4e1;
+    width: 33%;
+}
+
+select{
+    background-color: white;
+    border-radius: 8px;
+    border: 0px;
+    height: 20px;
+    width: 120px;
+}
+
+input{
+    background-color: white;
+    border:0px;
+    border-radius: 8px;
+    height: 20px;
+    width: 120px;
+}
+
+.orden{
+    background-color: #49a4e1;
+    width: 34%;
+}
+
+section{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    /* padding: 15px 15px 10px; */
+    display: flex;
+    flex-direction: column;
+    background-color: #2F7BAD;
+    border-style: solid;
+    border-color: #1F5273;
+    border-width: 1px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    flex: auto;
+    height: 400px;
+    width: 200px;
+}
+
+.card-body-img{
+    /* padding: 15px 15px 10px; */
+    display: flex;
+    overflow: hidden;
+    height: 300px;
+}
+
+.poster {
+    width: 100%;
+    height: 100%;
+}
+
+.card-body-text {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+}
+
+.card-title {
+    font-size: 16px;
+}
+.card-body h5,
+.card-body span {
+    margin: 5px;
+}
+
+/* footer{
+    background-color: #49a4e1;
+    height: 3%;
+    margin-bottom: 0;
+} */
+
+/* Borde de la Pagina */
+#top, #bottom, #left, #right {
+    background: #49a4e1;
+	position: fixed;
+}
+	
+#left, #right{
+	top: 0px;
+    bottom: 0px;
+	width: 10px;
+}
+	
+#left {
+    left: 0; 
+}
+
+#right {
+    right: 0;
+}
+
+#top, #bottom {
+	left: 0;
+    right: 0;
+	height: 10px;
+}
+	
+#top {
+    top: 0; 
+}
+
+#bottom {
+    bottom: 0;
+}
+
+/*trabajando en card 1 jackeline*/
+.card1, .card2, .card3, .card4, .card5, .card6 {
+    border: 15px solid #F7F8F7;
+    background-color: #49a4e1;
+    padding: 15px;
+    width: 19%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*.card2 {
+    border: 15px solid #F7F8F7;
+    background-color: #49a4e1;
+    padding: 15px;
+    width: 15%;
+    height: 45%;
+    display: inline-block;
+}*/
+
+/*trabajando en card 2 Ale*/
+
+
+  
