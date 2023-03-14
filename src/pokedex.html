@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PokeFanGO</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/master.ico"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="fondoPokedex">
+    <header><img src="img/tittlepkmn.png" alt="PokeFanGO y un pikachu saltando"><a class="inicio" href="index.html" >INICIO</a></header>
+    <main class="main-pokedex">
+      <section class="filter">
+        <div class="filter-container">
+          <div class="filter-btn">
+            <button>N° Pokedex ▼</button>
+            <div class="filter-btn-content">
+              <span id="menor">0 - 251</span>
+              <span id="mayor">251 - 0</span>
+            </div>
+          </div>
+          <div id="printPokedex" class="filter-show">
+            Ningún seleccionado
+          </div>
+        </div>
+        <div class="filter-container">
+          <div class="filter-btn">
+            <button>Región ▼</button>
+            <div class="filter-btn-content">
+              <span id="regionK">Kanto</span>
+              <span id="regionJ">Johto</span>
+            </div>
+          </div>
+          <div id="printRegion" class="filter-show">
+            Ningún seleccionado
+          </div>
+        </div>
+        <div class="filter-container">
+          <div class="filter-btn">
+            <button>Tipo ▼</button>
+            <div class="filter-btn-content">
+              <span id="typeVeneno" class="type-p">Veneno</span>
+              <span id="typeAgua" class="type-p">Agua</span>
+              <span id="typeDragon" class="type-p">Dragón</span>
+              <span id="typeFuego" class="type-p">Fuego</span>
+              <span id="typeHada" class="type-p">Hada</span>
+              <span id="typeLucha" class="type-p">Lucha</span>
+              <span id="typePlanta" class="type-p">Planta</span>
+              <span id="typeRoca" class="type-p">Roca</span>
+              <span id="typeTierra" class="type-p">Tierra</span>
+              <span id="typeAcero" class="type-p">Acero</span>
+              <span id="typeBicho" class="type-p">Bicho</span>
+              <span id="typeElectrico" class="type-p">Eléctrico</span>
+              <span id="typeFantasma" class="type-p">Fantasma</span>
+              <span id="typeHielo" class="type-p">Hielo</span>
+              <span id="typeNormal" class="type-p">Normal</span>
+              <span id="typePsiquico" class="type-p">Psíquico</span>
+              <span id="typeSiniestro" class="type-p">Siniestro</span>
+              <span id="typeVolador" class="type-p">Volador</span>
+            </div>
+          </div>
+          <div id="printType" class="filter-show">
+            Ningún seleccionado
+          </div>
+        </div>
+        <div class="filter-container">
+          <div class="filter-btn">
+            <button>Rareza ▼</button>
+            <div class="filter-btn-content">
+              <span id="rarityN">Normal</span>
+              <span id="rarityM">Mítico</span>
+              <span id="rarityL">Legendario</span>
+            </div>
+          </div>
+          <div id="printRarity" class="filter-show">
+            Ningún seleccionado
+          </div>
+        </div>
+        <div class="filter-container">
+          <div class="filter-btn">
+            <button>P. Combate ▼</button>
+            <div class="filter-btn-content">
+              <span id="maxPC">Máximo PC</span>
+              <span id="minPC">Mínimo PC</span>
+            </div>
+          </div>
+          <div id="printPC" class="filter-show">
+            Ningún seleccionado
+          </div>
+        </div>
+      </section>
+      <section class="listado">
+        <div class="buscador">
+          Buscar pokemon: <input type="search" name="busquedapkmn" pattern="[A-Za-z0-9]{8,20}" title="Escribe el nombre del pokemon" placeholder="Ej: lugia" required>
+          <input type="submit" value="🔍︎" class="lupa">
+        </div>
+        <div class="listado-pkmn">
+          <template>
+            <div class="container">
+              <div class="container-dex">N° <span class="container-num"></span></div>
+              <img class="container-img">
+              <div class="container-name"></div>
+              <div><span class="container-type1"></span><span class="container-type2"></span></div>
+            </div>
+          </template>
+          <div class="dataList"></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>¿Necesitas ayuda? . . . Contáctanos <img src="img/logoGitHub.png" alt="Logo de GitHub, que es un gato" width="15"><a href="https://github.com/marielfico" target="_blank">marielfico</a> & <img src="img/logoGitHub.png" alt="Logo de GitHub, que es un gato" width="15"><a href="https://github.com/IndiraPe" target="_blank">IndiraPe</a></footer>
+
+    <div id="root"></div>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
