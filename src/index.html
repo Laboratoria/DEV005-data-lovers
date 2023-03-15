@@ -1,12 +1,138 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+
+  <header>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!--Control de audio-->
+  <audio controls>
+    <source src="Extras/Professor (Main Theme) - Pokémon GO OST (Extended).mp3">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+  <!--Titulo -->
+  <center> <img src="extra/pikachu-running.gif" width=" 10%" /> <img src="extra/poGoLogo2.png" width="25%" /><img src="extra/pikachu-running.gif" width=" 10%" /> </center>
+
+</header>
+<!--Barra de menú-->
+  <main class="boxtwo">
+    <div id="menu">
+      <button id="buttonHome">Home</button>
+      <button id="buttonPokedex"> Pokedex</button>
+      <button id="buttonMap"> Mapa</button>
+      <button id="buttonExtra"> Noticias</button>
+    </div>
+  
+<!--Seccion de home-->
+  <section id="homeSecction"> 
+
+  <div id= "welcome">
+    <h1> Hola entrenador Pokemon </h1> 
+    <h2>  Te damos la bienvenida al emocionante mundo de Pokemon Go!</h2>
+
+   <p> Este juego te invita a salir de casa e ir en la búsqueda de pokemons!!
+    completa tu Pokedex y combate con otros jugadores en la liga de combates Go!</p>
+
+    <p>  Nosotras de ayudaremos mostrándote las características de cada pokemon de Kanto y Johto, 
+    además tenemos un mapa donde te indicamos que pokemon puedes encontrar con mayor probabilidad
+    en cada zona geográfica. </p>
+    <img id ="oak" src="/extra/profesorOak.webp" width="40%" /> 
+  </div>
+
+  <div id="carrusel"> 
+  <div class="swiffy-slider">    
+    <ul class="slider-container">
+     
+    <li><img class="slider-item" style="max-width: 100%;height: auto;" src="./extra/noticia1.png" alt="¡Perfecciona tus habilidades en el evento Objetivo de Captura!" ></img></li>
+    <li><img class="slider-item" style="max-width: 100%;height: auto;" src="./extra/noticia2.png" alt="Día de la Comunidad de marzo de 2023: Slowpoke y Slowpoke de Galar" ></img></li>
+    <li><img class="slider-item" style="max-width: 100%;height: auto;" src="./extra/noticia3.png" alt="Actualización sobre la Liga Combates GO: Rising Heroes" ></img></li>
+  </ul>
+  <button type="button" class="slider-nav"></button>
+  <button type="button" class="slider-nav slider-nav-next"></button>
+
+  <div class="slider-indicators">
+      <button class="active"></button>
+      <button></button>
+      <button></button>
+  </div>
+</div>
+  </div>
+  </section>
+
+<!--Sección de pokedex-->
+  <section id="pokedexSecction"> 
+  <h3> Selecciona el tipo de Pokémon que necesitas, si quieres verlos todos oprime la pokebola</h3>
+    <div id = "filterType">
+      <img id ="allTypes" src="./extra/allTypes.png" alt="logo todos los tipos de pokemon" /> 
+      <img id = "typeNormal" src="./extra/type_normal.png" alt="logo tipo normal" /> 
+      <img id = "typeFighting" src="./extra/Type_Lucha.webp" alt="logo tipo lucha" /> 
+      <img id = "typeFlying" src="./extra/type_volador.png" alt="logo tipo volador" /> 
+      <img id = "typePoison" src="./extra/type_veneno.png" alt="logo tipo veneno" /> 
+      <img id = "typeGround" src="./extra/Type_Tierra.webp" alt="logo tipo tierra" /> 
+      <img id = "typeRock" src="./extra/type_roca.png" alt="logo tipo roca" /> 
+      <img id = "typeBug" src="./extra/type_bicho.png" alt="logo tipo bicho" /> 
+      <img id = "typeGhost" src="./extra/Type_Fantasma.webp" alt="logo tipo fantasma" /> 
+      <img id = "typeSteel" src="./extra/style_acero.webp" alt="logo tipo acero" /> 
+      <img id = "typeFire" src="./extra/Type_Fuego.webp" alt="logo tipo fuego" /> 
+      <img id = "typeWater" src="./extra/Type_Agua.webp" alt="logo tipo agua" /> 
+      <img id = "typeGrass" src="./extra/type_planta.png" alt="logo tipo planta" /> 
+      <img id = "typeElectric" src="./extra/Type_Electric.webp" alt="logo tipo electrico" /> 
+      <img id = "typePsychic" src="./extra/Type_Psquico.webp" alt="logo tipo psiquico" /> 
+      <img id = "typeIce" src="./extra/type_hielo.png" alt="logo tipo hielo" /> 
+      <img id = "typeDragon" src="./extra/type_dragon.webp" alt="logo tipo dragon" />
+      <img id = "typeDark" src="./extra/Type_Siniestro.webp" alt="logo tipo siniestro"/> 
+      <img id = "typeFairy" src="./extra/Type_Hada.webp" alt="logo tipo hada" /> 
+    </div>
+    <article> 
+    <select name="Ordenar" id="filterLetter" class="selector">
+      <option disabled selected>Ordenar por:</option>
+      <option id="asc" value="1">A-Z</option>
+      <option id="des" value="2">Z-A</option> </select>
+    </article>
+
+    <!--Lista de pokemon-->
+    <div id = "pokemons">
+    
+    </div>
+
+  </section>
+
+
+  <section id="mapSecction"> 
+      <p> "hoooooooooooola"</p>
+  </section>
+
+
+  <section id="extraSecction">
+    
+  </section>
+
+
+</main>
+
+
+
+
+
+
+<footer> Web creada por Gisselle y Carolina <img src="./extra/pokeball-pokemon.gif" style = "width: 10%" /> </footer>
+
+
+
+
+
+
+  <script src="main.js" type="module"></script>
+
+</body>
+
 </html>
